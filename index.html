@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header>
+        Weather Dashboard
+        <button id="toggle-dark-btn" title="Toggle Dark Mode">🌓</button>
+    </header>
+
+    <main>
+        <section class="search-section">
+            <input type="text" id="city-input" placeholder="Enter city name" autocomplete="off" />
+            <button id="search-btn">🔍</button>
+            <button id="geo-btn" title="Use my location">📍</button>
+        </section>
+
+        <section class="weather-container">
+            <div id="weather-card" class="weather-card"></div>
+            <div id="forecast" class="forecast-card"></div>
+        </section>
+
+        <section class="recent-section">
+            <h3>Recently Viewed Cities</h3>
+            <div id="recent-searches" class="recent-searches"></div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

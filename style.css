@@ -1,0 +1,149 @@
+/* Reset & base */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    color: #fff;
+}
+
+/* Dark mode */
+.dark-mode {
+    background: linear-gradient(135deg, #000428 0%, #004e92 100%);
+    color: #fff;
+}
+
+/* Header */
+header {
+    background: transparent;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+    position: relative;
+}
+
+#toggle-dark-btn {
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+/* Search section */
+.search-section {
+    margin: 1rem auto;
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+#city-input {
+    padding: 0.6rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    width: 200px;
+}
+
+#search-btn, #geo-btn {
+    padding: 0.6rem 1rem;
+    border: none;
+    border-radius: 30px;
+    background: rgba(255,255,255,0.2);
+    color: #fff;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s;
+}
+
+#search-btn:hover, #geo-btn:hover {
+    background: rgba(255,255,255,0.4);
+}
+
+/* Weather card */
+.weather-card, .forecast-card {
+    background: rgba(255,255,255,0.1);
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    padding: 1.5rem;
+    text-align: center;
+    margin: 1rem;
+    backdrop-filter: blur(10px);
+}
+
+.weather-card img.weather-icon {
+    width: 80px;
+    height: 80px;
+}
+
+.weather-details div {
+    margin: 0.3rem 0;
+}
+
+/* Forecast card */
+.forecast-card {
+    display: none;
+}
+
+.forecast-days {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.forecast-day {
+    background: rgba(255,255,255,0.1);
+    border-radius: 12px;
+    padding: 0.5rem;
+    width: 60px;
+    font-size: 0.8rem;
+}
+
+.forecast-day img {
+    width: 40px;
+    height: 40px;
+}
+
+.desc {
+    text-transform: capitalize;
+    font-size: 0.9rem;
+    margin-top: 0.3rem;
+}
+
+/* Recently viewed */
+.recent-section {
+    margin: 2rem auto;
+    max-width: 600px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 20px;
+    padding: 1rem;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.recent-section h3 {
+    margin-bottom: 0.5rem;
+}
+
+.recent-btn {
+    margin: 0.2rem;
+    background: rgba(255,255,255,0.2);
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 0.3rem 0.7rem;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.recent-btn:hover {
+    background: rgba(255,255,255,0.4);
+}
